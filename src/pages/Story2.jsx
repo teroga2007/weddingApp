@@ -122,7 +122,7 @@ export default function Story2() {
                 <h2 className="text-xl md:text-2xl font-black uppercase mb-3">
                   — {item.date} —
                 </h2>
-                <h3 className="text-2xl md:text-6xl mb-10 font-handwriting">
+                <h3 className="text-3xl md:text-6xl mb-10 font-handwriting">
                   {item.title}
                 </h3>
                 <p className="text-base md:text-lg">{item.description}</p>
@@ -180,7 +180,7 @@ export default function Story2() {
           >
             <button
               onClick={closeLightbox}
-              className="absolute top-6 right-6 text-white text-4xl font-bold hover:text-yellow-400 z-50"
+              className="absolute top-6 right-6 text-white text-4xl font-bold hover:text-primary-500 z-50"
               aria-label="Cerrar imagen"
             >
               &times;
@@ -192,7 +192,7 @@ export default function Story2() {
                   e.stopPropagation();
                   prevImage();
                 }}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-yellow-400 z-50"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-primary-500 z-50"
                 aria-label="Anterior"
               >
                 &#8592;
@@ -217,7 +217,7 @@ export default function Story2() {
                   e.stopPropagation();
                   nextImage();
                 }}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-yellow-400 z-50"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-5xl font-bold hover:text-dark-500 z-50"
                 aria-label="Siguiente"
               >
                 &#8594;

@@ -1,6 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import dresscode from "../assets/formal-tropical.png";
+import img1 from "../assets/mosaic/img1.jpg";
+import img2 from "../assets/mosaic/img2.png";
 
 export default function GeneralInfo({
   location,
@@ -8,14 +11,26 @@ export default function GeneralInfo({
   dressCode,
   className,
 }) {
+  const [pinterestLoaded, setPinterestLoaded] = useState(true);
+  const pinterestRef = useRef(null);
+
   useEffect(() => {
+    // Cargar script de Pinterest
     const script = document.createElement("script");
     script.async = true;
-    script.type = "text/javascript";
-    script.dataset.pinBuild = "doBuild";
-    script.src = "//assets.pinterest.com/js/pinit.js";
+    script.src = "https://assets.pinterest.com/js/pinit.js";
     document.body.appendChild(script);
-    if (window.doBuild) window.doBuild();
+
+    const timeout = setTimeout(() => {
+      if (pinterestRef.current) {
+        const height = pinterestRef.current.offsetHeight;
+        if (height < 100) {
+          setPinterestLoaded(false);
+        }
+      }
+    }, 2500);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
@@ -60,18 +75,48 @@ export default function GeneralInfo({
           </h3>
           <p className="text-gray-700 text-md mb-3">{dressCode}</p>
           <p className="text-sm text-gray-500">
-            Consulta el tablero de inspiración para ideas visuales.
+            Consulta el{" "}
+            <a
+              className="font-bold text-dark-500 hover:underline cursor-pointer"
+              href="https://www.pinterest.com/ter0ga/c%C3%B3digo-de-vestimenta-formal-tropical/"
+            >
+              tablero{" "}
+            </a>
+            de inspiración para ideas visuales.
+            <img
+              src={dresscode}
+              alt="Formal Tropical example"
+              className="w-32"
+              loading="lazy"
+            />
           </p>
         </div>
 
-        <div className="md:w-1/2 h-full p-4 flex justify-center">
-          <a
-            data-pin-do="embedBoard"
-            data-pin-board-width="400"
-            data-pin-scale-height="200"
-            data-pin-scale-width="80"
-            href="https://www.pinterest.com/ter0ga/c%C3%B3digo-de-vestimenta-formal-tropical/"
-          ></a>
+        <div
+          className="md:w-1/2 h-full p-4 flex flex-col justify-center"
+          ref={pinterestRef}
+        >
+          {pinterestLoaded ? (
+            <a
+              data-pin-do="embedBoard"
+              data-pin-board-width="400"
+              data-pin-scale-height="200"
+              data-pin-scale-width="80"
+              href="https://www.pinterest.com/ter0ga/c%C3%B3digo-de-vestimenta-formal-tropical/"
+            ></a>
+          ) : (
+            <div className="grid grid-cols-2 gap-2">
+              {[img1, img2].map((img, i) => (
+                <img
+                  key={i}
+                  src={img}
+                  alt={`inspo-${i}`}
+                  className="rounded-lg object-cover w-full h-full"
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          )}
         </div>
       </motion.div>
     </section>

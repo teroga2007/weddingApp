@@ -9,7 +9,7 @@ export default function LodgingRecommendations({ data }) {
     >
       {data.map((section, idx) => (
         <div key={idx} className="bg-white p-10 rounded-3xl shadow-xl">
-          <h2 className="text-2xl font-extrabold mb-4 text-center text-primary-600">
+          <h2 className="text-2xl font-extrabold mb-4 text-center text-primary-500">
             {section.section}
           </h2>
           {section.description && (
@@ -32,7 +32,7 @@ export default function LodgingRecommendations({ data }) {
                   />
                 )}
                 <div className="p-5 flex flex-col flex-1">
-                  <h3 className="text-lg font-bold text-primary-600 mb-1">
+                  <h3 className="text-lg font-bold text-primary-500 mb-1">
                     {place.name}
                   </h3>
                   <p className="text-gray-700 text-sm mb-2">{place.address}</p>
