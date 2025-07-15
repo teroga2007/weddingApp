@@ -68,7 +68,7 @@ export default function Home() {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-primary-500/80 to-primary-500/40" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-dark-500/80 to-primary-500/50" />
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center">
