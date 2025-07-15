@@ -83,13 +83,13 @@ export default function GeneralInfo({
               tablero{" "}
             </a>
             de inspiración para ideas visuales.
-            <img
-              src={dresscode}
-              alt="Formal Tropical example"
-              className="w-32"
-              loading="lazy"
-            />
           </p>
+          <img
+            src={dresscode}
+            alt="Formal Tropical example"
+            className="w-32 m-auto md:m-0"
+            loading="lazy"
+          />
         </div>
 
         <div

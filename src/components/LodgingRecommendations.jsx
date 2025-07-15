@@ -9,7 +9,7 @@ export default function LodgingRecommendations({ data }) {
     >
       {data.map((section, idx) => (
         <div key={idx} className="bg-white p-10 rounded-3xl shadow-xl">
-          <h2 className="text-2xl font-extrabold mb-4 text-center text-primary-500">
+          <h2 className="text-2xl font-extrabold mb-4 text-center text-primary-600">
             {section.section}
           </h2>
           {section.description && (
@@ -18,7 +18,7 @@ export default function LodgingRecommendations({ data }) {
             </p>
           )}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {section.places.map((place, index) => (
               <div
                 key={index}
