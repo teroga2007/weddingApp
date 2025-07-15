@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 export default function LodgingRecommendations({ data }) {
   return (
-    <motion.section
+    <section
       whileHover={{ scale: 1.01 }}
       transition={{ type: "spring", stiffness: 150, damping: 18 }}
       className="space-y-14"
@@ -57,6 +57,6 @@ export default function LodgingRecommendations({ data }) {
           </div>
         </div>
       ))}
-    </motion.section>
+    </section>
   );
 }
