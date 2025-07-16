@@ -1,7 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
-import timeline from "../data/timeline";
+import { useParams } from "react-router-dom";
+
+import { timeline_es, timeline_en } from "../data/timeline";
+import i18n from "../i18n";
 
 const bgColors = [
   "bg-primary-pattern",
@@ -15,9 +18,16 @@ const textColorByBg = {
 };
 
 export default function Story2() {
+  const { lang } = useParams();
+  const timeline = lang === "en" ? timeline_en : timeline_es;
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxImageIndex, setLightboxImageIndex] = useState(null);
   const sectionRefs = useRef([]);
+  const hasMultipleImages = timeline_es[activeIndex]?.image?.length > 1;
+
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+  }, [lang]);
 
   // Sección está en pantalla
   useEffect(() => {
@@ -44,7 +54,7 @@ export default function Story2() {
   // Navegación en Lightbox
   const prevImage = useCallback(() => {
     if (lightboxImageIndex === null) return;
-    const count = timeline[activeIndex].image.length;
+    const count = timeline[activeIndex]?.image.length;
     setLightboxImageIndex((lightboxImageIndex - 1 + count) % count);
   }, [activeIndex, lightboxImageIndex]);
 
@@ -77,12 +87,9 @@ export default function Story2() {
     <div className="relative w-full">
       {/* Navegación lateral */}
       <nav
-        className={`fixed z-50 flex gap-3 bg-dark-100/90 rounded-lg p-3 transition
-        ${
-          typeof window !== "undefined" && window.innerWidth < 768
-            ? "bottom-4 left-1/2 transform -translate-x-1/2 flex-row"
-            : "top-1/2 right-4 transform -translate-y-1/2 flex-col"
-        }`}
+        className="fixed z-50 flex gap-3 bg-dark-100/90 rounded-lg p-3 transition
+             bottom-4 left-1/2 -translate-x-1/2 flex-row
+             md:top-1/2 md:right-4 md:-translate-y-1/2 md:translate-x-0 md:flex-col md:bottom-auto md:left-auto"
       >
         {timeline.map((item, index) => (
           <button
@@ -177,6 +184,8 @@ export default function Story2() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
+            aria-modal="true"
+            role="dialog"
           >
             <button
               onClick={closeLightbox}
@@ -186,7 +195,7 @@ export default function Story2() {
               &times;
             </button>
 
-            {timeline[activeIndex].image.length > 1 && (
+            {hasMultipleImages && (
               <button
                 onClick={(e) => {
                   e.stopPropagation();
@@ -211,7 +220,7 @@ export default function Story2() {
               onClick={(e) => e.stopPropagation()}
             />
 
-            {timeline[activeIndex].image.length > 1 && (
+            {hasMultipleImages > 1 && (
               <button
                 onClick={(e) => {
                   e.stopPropagation();

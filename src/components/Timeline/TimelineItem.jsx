@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const TimelineItem = ({ date, title, description, image, index }) => {

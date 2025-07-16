@@ -47,7 +47,7 @@ const faqs = [
     "link": "https://wa.me/50683846353",
     "linkText": "💬 WhatsApp Nicole",
     "link2": "https://wa.me/50683580490",
-    "link2Text": "🗨️ WhatsApp Marcial"
+    "link2Text": "💬 WhatsApp Marcial"
   }
 ];
 

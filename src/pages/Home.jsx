@@ -1,23 +1,36 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
+
 import couplePhoto1 from "../assets/couple-photos/MYN-7.webp";
 import couplePhoto2 from "../assets/couple-photos/MYN-42.webp";
 import couplePhoto3 from "../assets/couple-photos/MYN-59.webp";
 import couplePhoto4 from "../assets/couple-photos/MYN-73.webp";
 import rose from "../assets/rose-outline-variant-with-vines-and-leaves.png";
+import i18n from "../i18n";
 
 const photos = [couplePhoto1, couplePhoto2, couplePhoto3, couplePhoto4];
 
 export default function Home() {
+  const { t } = useTranslation();
+  const { lang } = useParams();
+
   const [currentImage, setCurrentImage] = useState(0);
   const [timeLeft, setTimeLeft] = useState({});
   const units = {
-    days: "Días",
-    hours: "Horas",
-    minutes: "Minutos",
-    seconds: "Segundos",
+    days: t("home.timer.days"),
+    hours: t("home.timer.hours"),
+    minutes: t("home.timer.minutes"),
+    seconds: t("home.timer.seconds"),
   };
+
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+  }, [lang]);
 
   useEffect(() => {
     const weddingDate = new Date("2026-02-28T00:00:00");
@@ -53,18 +66,17 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center text-center p-6 overflow-hidden relative w-full h-screen">
       {/* BG Carousel */}
       <div className="absolute inset-0 z-0">
-        {photos.map((photo, index) => (
+        <AnimatePresence mode="wait">
           <motion.div
-            key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
-              index === currentImage ? "opacity-100" : "opacity-0"
-            }`}
-            style={{ backgroundImage: `url(${photo})` }}
-            initial={{ scale: 1 }}
-            animate={index === currentImage ? { scale: 1.1 } : { scale: 1 }}
-            transition={{ duration: 5, ease: "easeInOut" }}
+            key={photos[currentImage]}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${photos[currentImage]})` }}
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1.1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
           />
-        ))}
+        </AnimatePresence>
       </div>
 
       {/* Gradient Overlay */}
@@ -91,7 +103,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          — es la boda de —
+          {t("home.subtitle")}
         </motion.span>
 
         <motion.h1
@@ -100,7 +112,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
         >
-          Nicole & Marcial
+          {t("home.title")}
         </motion.h1>
 
         {/* Timer Box */}
@@ -111,10 +123,20 @@ export default function Home() {
           transition={{ delay: 1, duration: 1 }}
         >
           {timeLeft.days !== undefined ? (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-12 justify-center text-white">
+            <div
+              className="grid grid-cols-2 sm:grid-cols-4 gap-12 justify-center text-white"
+              role="timer"
+              aria-label={`${timeLeft.days} ${t("home.timer.days")}, ${
+                timeLeft.hours
+              } ${t("home.timer.hours")}, ${timeLeft.minutes} ${t(
+                "home.timer.minutes"
+              )} y ${timeLeft.seconds} ${t("home.timer.seconds")}`}
+            >
               {Object.entries(timeLeft).map(([unit, value]) => (
                 <div key={unit} className="flex flex-col items-center">
-                  <span className="text-4xl font-extrabold">{value}</span>
+                  <span className="text-4xl font-extrabold">
+                    {value ?? "--"}{" "}
+                  </span>
                   <span className="text-sm uppercase tracking-wide">
                     {units[unit]}
                   </span>
@@ -124,12 +146,10 @@ export default function Home() {
           ) : (
             <div className="text-center text-dark-700">
               <p className="text-4xl font-extrabold font-handwriting mb-2 animate-pulse">
-                🎉 ¡Hoy es el gran día!
+                {t("home.today")}
               </p>
-              <p className="text-2xl font-bold">¡Nos casamos! 💍</p>
-              <p className="mt-2 text-lg font-medium">
-                Les esperamos a todos en la fiesta ✨
-              </p>
+              <p className="text-2xl font-bold">{t("home.married")}</p>
+              <p className="mt-2 text-lg font-medium">{t("home.invitation")}</p>
             </div>
           )}
         </motion.div>

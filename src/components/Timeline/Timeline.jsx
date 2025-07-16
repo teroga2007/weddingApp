@@ -1,5 +1,5 @@
 import TimelineItem from "./TimelineItem";
-import timelineData from "../data/timeline";
+import timelineData from "../../data/timeline";
 
 const Timeline = () => {
   return (

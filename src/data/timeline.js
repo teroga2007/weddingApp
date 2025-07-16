@@ -23,7 +23,7 @@ import foto24 from "../assets/elements/foto24.jpg";
 import foto25 from "../assets/elements/foto25.png";
 import foto26 from "../assets/elements/foto26.jpg";
 
-const timeline = [
+const timeline_es = [
   {
     date: "Septiembre 2016",
     title: "Nos conocimos",
@@ -82,4 +82,64 @@ const timeline = [
   },
 ];
 
-export default timeline;
+const timeline_en = [
+  {
+    date: "September 2016",
+    title: "We met",
+    description:
+      "Nicole was celebrating her 17th birthday when, at a party, she accidentally spilled an orange Fanta on a stranger’s pants—Marcial’s. Although the first impression wasn’t the best, that moment marked the beginning of their story.",
+    image: [foto1],
+  },
+  {
+    date: "January 2017",
+    title: "A friendship began",
+    description:
+      "A casual encounter at a coffee shop led to their first official outing. From then on, they started seeing each other often, creating a bond that slowly turned into something deeper.",
+    image: [foto2, foto4],
+  },
+  {
+    date: "2017",
+    title: "A year of connection",
+    description:
+      "Throughout 2017, Nicole and Marcial shared countless special moments, strengthening their relationship through laughter, conversations, and spontaneous dates.",
+    image: [foto5, foto6, foto7],
+  },
+  {
+    date: "January 2018",
+    title: "Moving in together",
+    description:
+      "With the need to move to the city for college, they decided to live together as roommates. However, they soon realized there was much more than friendship between them.",
+    image: [foto8, foto9, foto10],
+  },
+  {
+    date: "March 2018",
+    title: "The family grew",
+    description:
+      "In March 2018, they adopted Chiky, a little puppy who filled their home with love and laughter. Since then, she’s become the heart of their little family.",
+    image: [foto22, foto18],
+  },
+  {
+    date: "March 2019",
+    title: "Long-distance love",
+    description:
+      "Nicole moved to the Caribbean to study for four years, but distance was never a barrier for their love. They found ways to stay connected and made their relationship even stronger.",
+    image: [foto12, foto11, foto13, foto14],
+  },
+  {
+    date: "January 2024",
+    title: "New beginning, same love",
+    description:
+      "After years of effort, they finally moved back in together in 2024—this time with their careers completed and ready to build a home side by side.",
+    image: [foto17, foto16, foto15, foto19, foto20],
+  },
+  {
+    date: "December 22, 2024",
+    title: "The engagement",
+    description:
+      "After 8 years and 3 months together, Marcial finally put a ring on Nicole’s finger, as a promise to continue building this love story together. It marks the start of a new chapter, and today we’re thrilled to know you’ll be with us to celebrate this wedding.",
+    image: [foto24, foto21, foto25, foto26],
+  },
+];
+
+
+export { timeline_es, timeline_en };

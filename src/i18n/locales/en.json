@@ -1,0 +1,197 @@
+{
+  "menu": {
+    "menu": "Menu",
+    "info": "Info",
+    "gifts": "Gifts",
+    "faq": "FAQ",
+    "rsvp": "RSVP",
+    "story": "Our Story",
+    "gallery": "Gallery"
+  },
+  "footer": {
+    "powered": "Powered by",
+    "reserved": "All rights reserved"
+  },
+  "home": {
+    "title": "Nicole & Marcial",
+    "subtitle": "— it's the wedding of —",
+    "today": "🎉 Today is the big day!",
+    "married": "We are getting married! 💍",
+    "invitation": "We are waiting for you at the party ✨",
+    "timer": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    }
+  },
+  "info": {
+    "title": "Event details",
+    "backTitle": "details",
+    "schedule": {
+      "title": "Schedule of the Day",
+      "items": [
+        { "time": "3:20 PM", "activity": "Doors open" },
+        {
+          "time": "4:00 PM",
+          "activity": "Beach ceremony (Please arrive at least 15 minutes early)"
+        },
+        {
+          "time": "5:00 PM",
+          "activity": "Coffee break and special presentation by our dear Valeria"
+        },
+        { "time": "5:30 PM", "activity": "Speech by the bride's best friend" },
+        {
+          "time": "5:40 PM",
+          "activity": "Toast to the couple by the best man"
+        },
+        {
+          "time": "5:50 PM",
+          "activity": "Brief prayer by the bride's grandfather"
+        },
+        { "time": "6:30 PM", "activity": "Dinner" },
+        { "time": "7:30 PM", "activity": "First dance as husband and wife" },
+        { "time": "7:40 PM", "activity": "Everyone to the dance floor!" }
+      ]
+    }
+  },
+  "details": {
+    "title": "Where and When",
+    "location": "Mi Casita Tica, Puntarenas",
+    "date": "February 26th, 2026",
+    "time": "3:00 PM",
+    "pinterest": "Check this Pinterest board for inspo.",
+    "dresscode": "Dress Code",
+    "tropical": "Tropical Formal"
+  },
+  "lodging": {
+    "section": "Lodging Recommendations",
+    "description": "We recommend searching directly on each hotel’s website or on platforms like Booking.com or Airbnb.",
+    "places": [
+      {
+        "name": "Fiesta Resort – All Inclusive",
+        "address": "📍 El Roble, Puntarenas (2 minutes from the wedding venue)",
+        "description": "Beachfront resort with pools, restaurants, bars, and recreational activities. Ideal for an all-inclusive experience.",
+        "price": "💰 From 100,000 CRC per person per night (approx.)."
+      },
+      {
+        "name": "Hotel Cayuga",
+        "address": "📍 Downtown Puntarenas (15 minutes from the wedding venue)",
+        "description": "Modern hotel with a pool, breakfast included, and air-conditioned rooms. Close to the beach and Pacific Marine Park.",
+        "price": "💰 From 30,000 CRC per person per night (lower rates if shared)."
+      },
+      {
+        "name": "Hotel Río Mar",
+        "address": "📍 Puntarenas (15 minutes from the wedding venue)",
+        "description": "Hotel with outdoor pool, gardens, and A/C rooms. Very close to Boca Barranca beach.",
+        "price": "💰 From 30,000 CRC per double room per night."
+      },
+      {
+        "name": "Cabinas Yolymar",
+        "address": "📍 Puntarenas (15 minutes from the wedding venue)",
+        "description": "Simple cabins with garden, relaxation zone, and mini jacuzzi. Budget-friendly for couples or small groups.",
+        "price": "💰 From 20,000 CRC per double room per night."
+      },
+      {
+        "name": "Cabinas Caldera 2",
+        "address": "📍 El Roble, Puntarenas (2 minutes from the wedding venue)",
+        "description": "Family-style lodging with simple rooms for up to 7 guests. Includes full kitchen, pool, and BBQ area.",
+        "price": "💰 Around 85,000 CRC per night for groups of 7."
+      },
+      {
+        "name": "Cabinas Confort",
+        "address": "📍 Barrio El Carmen (20 minutes from the wedding venue)",
+        "description": "Up to 8 cozy, safe rooms. Includes pool and other amenities.",
+        "price": "💰 From 30,000 CRC per couple."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "backTitle": "Photos",
+    "heading": "Relive and Share!",
+    "description": "We've created a collaborative album where you can view all the event photos and upload your own to share with all the guests. 📷✨",
+    "cta": "Go to the Google Photos Album",
+    "uploadInvite": "Did you take any photos or videos during the wedding? 🥰 Upload them to the album so we can all relive those special moments together."
+  },
+  "rsvp": {
+    "title": "Confirm your attendance",
+    "noscript1": "If the form doesn't load, click",
+    "noscript2": "here to confirm your attendance"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "What is the dress code?",
+        "answer": "Tropical Formal. We invite you to dress elegantly yet comfortably. We recommend long or midi dresses in light, airy fabrics, linen or light-colored suits for men, and comfortable shoes such as wedges, elegant sandals, or block heels (avoid stilettos due to the sand). Please avoid wearing beige, blue, light blue, or turquoise, as these are reserved for the guests of honor. White is reserved for the bride.",
+        "link": "/event-info",
+        "linkText": "See details"
+      },
+      {
+        "question": "What time should I arrive?",
+        "answer": "Doors open at 3:20 PM. The ceremony starts promptly at 4:00 PM."
+      },
+      {
+        "question": "Where is the event?",
+        "answer": "At Mi Casita Tica, Puntarenas. You can find the map link under Info.",
+        "link": "/event-info",
+        "linkText": "See details"
+      },
+      {
+        "question": "What happens if I don’t RSVP?",
+        "answer": "Only those who confirmed will be allowed entry. We’re personalizing every detail and have made payments per guest, so we won’t be able to accommodate unconfirmed attendees. If you don’t RSVP, we’ll understand you won’t be joining us.",
+        "link": "/rsvp",
+        "linkText": "RSVP now"
+      },
+      {
+        "question": "Can I bring a plus one?",
+        "answer": "Only if they were included in your invitation. The wedding has limited capacity, so we kindly ask that only confirmed and registered guests attend."
+      },
+      {
+        "question": "Will parking be available?",
+        "answer": "Yes, there is space to park inside and near the venue. We recommend arriving early."
+      },
+      {
+        "question": "Is there transportation from any location?",
+        "answer": "We are not providing transportation, but guests can coordinate in groups. We’ll share a contact list to help organize carpools if needed."
+      },
+      {
+        "question": "What if it rains?",
+        "answer": "The ceremony will be outdoors, but the party will be under a roof. February is dry season, so we expect good weather, but if it rains, everything will move indoors. The party goes on!"
+      },
+      {
+        "question": "Are there any activities the next day?",
+        "answer": "We don’t have activities planned for the next day. That’s why we suggest you stay somewhere you’ll enjoy that’s close to local attractions like Paseo de los Turistas, Marine Park, nearby beaches, the port pier, San Lucas Island, Tortuga Island, and more. You can also choose a hotel or house with a pool and amenities to make the wedding weekend a getaway of its own."
+      },
+      {
+        "question": "What if I have a question?",
+        "answer": "Send us a message! Nicole: +506 8384 6353 / Marcial: +506 8358 0490",
+        "link": "https://wa.me/50683846353",
+        "linkText": "💬 WhatsApp Nicole",
+        "link2": "https://wa.me/50683580490",
+        "link2Text": "💬 WhatsApp Marcial"
+      }
+    ]
+  },
+  "gifts": {
+    "title": "Wedding Gifts",
+    "backTitle": "Gifts",
+    "messageTitle": "With Love",
+    "message": "Your presence at our wedding is the greatest gift we could ask for. However, if you’d like to surprise us with something extra, we greatly appreciate any contribution to help us start this new chapter together. Thank you for your love and support!",
+    "monetaryTitle": "Monetary Contributions",
+    "monetaryText": "If you prefer to contribute digitally, you can use the following accounts:",
+    "bankName": "Banco Nacional",
+    "accountHolder": "Account Holder",
+    "cardType": "Card Type",
+    "sinpe": "SINPE Mobile",
+    "sinpeNumber": "Number",
+    "carouselTitle": "Our Moments"
+  },
+
+  "notFound": {
+    "title": "Oops! Page not found.",
+    "message": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "button": "Back to Home"
+  }
+}

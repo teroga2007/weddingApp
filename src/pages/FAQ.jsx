@@ -1,19 +1,29 @@
-import { useState } from "react";
-import PageWrapper from "../components/PageWrapper";
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
-import faqs from "../data/faqs";
-import { Link } from "react-router-dom";
+
+import PageWrapper from "../components/Layout/PageWrapper";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 export default function FAQs() {
   const [openIndex, setOpenIndex] = useState(null);
+  const { lang } = useParams();
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+  }, [lang]);
+
+  const faqs = t("faq.faqs", { returnObjects: true });
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <PageWrapper title="Preguntas Frecuentes" titleBack="FAQ">
+    <PageWrapper title={t("faq.title")} titleBack="FAQ">
       <div className="max-w-4xl mx-auto p-4 md:p-8 space-y-6">
         {faqs.map((faq, index) => (
           <motion.div
@@ -48,20 +58,24 @@ export default function FAQs() {
                   className="px-6 pb-6 text-dark-500"
                 >
                   <p>{faq.answer}</p>
-                  {faq.link && (
-                    <div className="flex gap-10">
-                      <Link
-                        className="text-primary-500 font-bold underline mt-2 block"
-                        to={faq.link}
-                      >
-                        {faq.linkText}
-                      </Link>
-                      <Link
-                        className="text-primary-500 font-bold underline mt-2 block"
-                        to={faq.link2}
-                      >
-                        {faq.link2Text}
-                      </Link>
+                  {(faq.link || faq.link2) && (
+                    <div className="flex gap-10 mt-2">
+                      {faq.link && (
+                        <Link
+                          to={faq.link}
+                          className="text-primary-500 font-bold underline block"
+                        >
+                          {faq.linkText}
+                        </Link>
+                      )}
+                      {faq.link2 && (
+                        <Link
+                          to={faq.link2}
+                          className="text-primary-500 font-bold underline block"
+                        >
+                          {faq.link2Text}
+                        </Link>
+                      )}
                     </div>
                   )}
                 </motion.div>
