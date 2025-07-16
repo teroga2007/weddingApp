@@ -73,7 +73,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="flex gap-6">
+      <div className="flex gap-2 md:gap-6">
         <div className="flex-none relative" ref={menuRef}>
           <button
             onClick={() => setMenuOpen((prev) => !prev)}
