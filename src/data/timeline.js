@@ -28,118 +28,120 @@ const timeline_es = [
     date: "Septiembre 2016",
     title: "Nos conocimos",
     description:
-      "Nicole estaba celebrando sus 17 años cuando, en una fiesta, derramó sin querer una Fanta naranja en el pantalón de un chico desconocido: Marcial. Aunque las primeras impresiones no fueron las mejores, ese momento marcó el inicio de su historia.",
+      "Estábamos celebrando los 17 años de Nicole cuando, en una fiesta, ella derramó sin querer una Fanta naranja en el pantalón de un chico desconocido: Marcial. Aunque las primeras impresiones no fueron las mejores, ese momento marcó el inicio de nuestra historia.",
     image: [foto1],
   },
   {
     date: "Enero 2017",
-    title: "Inició una amistad",
+    title: "Inició nuestra amistad",
     description:
-      "Un encuentro casual en una cafetería los llevó a su primera salida oficial. Desde entonces, comenzaron a verse con frecuencia, creando un vínculo que poco a poco se transformó en algo más profundo.",
+      "Un encuentro casual en una cafetería nos llevó a nuestra primera salida oficial. Desde entonces empezamos a vernos con frecuencia, y poco a poco, fuimos creando un vínculo más profundo.",
     image: [foto2, foto4],
   },
   {
     date: "2017",
     title: "Un año de conexión",
     description:
-      "Durante todo el 2017, Nicole y Marcial compartieron innumerables momentos especiales, fortaleciendo su relación a través de risas, conversaciones y citas improvisadas.",
+      "Durante todo el 2017 compartimos innumerables momentos especiales, fortaleciendo nuestra relación a través de risas, conversaciones y citas improvisadas.",
     image: [foto5, foto6, foto7],
   },
   {
     date: "Enero 2018",
-    title: "Mudarnos juntos",
+    title: "Nos mudamos juntos",
     description:
-      "Con la necesidad de mudarse a la ciudad para estudiar, decidieron vivir juntos como roommates. Sin embargo, pronto se dieron cuenta de que lo suyo era mucho más que amistad.",
+      "Teníamos que mudarnos a la ciudad para estudiar, así que decidimos vivir juntos como roommates. Pero pronto nos dimos cuenta de que lo nuestro era mucho más que una amistad.",
     image: [foto8, foto9, foto10],
   },
   {
     date: "Marzo 2018",
     title: "Creció la familia",
     description:
-      "En marzo de 2018, adoptaron a Chiky, una cachorrita que llenó su hogar de amor y risas. Desde entonces, se ha convertido en el corazón de su pequeño hogar.",
+      "En marzo de 2018 adoptamos a Chiky, una gatita que llenó nuestro hogar de amor y risas. Desde entonces, es el corazón de nuestra pequeña familia.",
     image: [foto22, foto18],
   },
   {
     date: "Marzo 2019",
     title: "Amor a distancia",
     description:
-      "Nicole se fue a estudiar al Caribe por cuatro años, pero la distancia nunca fue un obstáculo para su amor. Encontraron la forma de seguir conectados y fortalecieron su relación a pesar de los kilómetros.",
+      "Nicole se fue a estudiar al Caribe por cuatro años, pero la distancia nunca fue un obstáculo para nuestro amor. Supimos mantenernos conectados y nuestra relación se fortaleció aún más.",
     image: [foto12, foto11, foto13, foto14],
   },
   {
     date: "Enero 2024",
     title: "Nuevo comienzo, mismo amor",
     description:
-      "Después de años de esfuerzo, finalmente volvieron a vivir juntos en 2024, esta vez con sus carreras terminadas y listos para construir un hogar juntos.",
+      "Después de años de esfuerzo, finalmente volvimos a vivir juntos en 2024, esta vez con nuestras carreras terminadas y listos para construir nuestro hogar.",
     image: [foto17, foto16, foto15, foto19, foto20],
   },
   {
     date: "22 de diciembre de 2024",
     title: "El compromiso",
     description:
-      "Tras 8 años y 3 meses juntos, Marcial se animó a ponerle un anillo en el dedo a Nicole, como una promesa de continuar construyendo juntos esta historia de amor. Se marca el inicio de una nueva etapa, y hoy con toda la emoción del mundo nos hace muy felices saber que estarán con nosotros celebrando este matrimonio.",
+      "Después de 8 años y 3 meses juntos, Marcial finalmente se animó a ponerle un anillo en el dedo a Nicole, como una promesa de seguir construyendo esta historia de amor. Es el inicio de una nueva etapa, y hoy, con toda la emoción del mundo, nos hace muy felices saber que estarán con nosotros celebrando este matrimonio.",
     image: [foto24, foto21, foto25, foto26],
   },
 ];
+
 
 const timeline_en = [
   {
     date: "September 2016",
     title: "We met",
     description:
-      "Nicole was celebrating her 17th birthday when, at a party, she accidentally spilled an orange Fanta on a stranger’s pants—Marcial’s. Although the first impression wasn’t the best, that moment marked the beginning of their story.",
+      "Nicole was celebrating her 17th birthday when, at a party, she accidentally spilled an orange Fanta on a stranger’s pants—Marcial’s. Although it wasn’t the best first impression, that moment marked the beginning of our story.",
     image: [foto1],
   },
   {
     date: "January 2017",
-    title: "A friendship began",
+    title: "Our friendship began",
     description:
-      "A casual encounter at a coffee shop led to their first official outing. From then on, they started seeing each other often, creating a bond that slowly turned into something deeper.",
+      "A casual encounter at a coffee shop led to our first official outing. From then on, we started seeing each other often and slowly built a deeper bond.",
     image: [foto2, foto4],
   },
   {
     date: "2017",
     title: "A year of connection",
     description:
-      "Throughout 2017, Nicole and Marcial shared countless special moments, strengthening their relationship through laughter, conversations, and spontaneous dates.",
+      "Throughout 2017, we shared countless special moments, strengthening our relationship through laughter, conversations, and spontaneous dates.",
     image: [foto5, foto6, foto7],
   },
   {
     date: "January 2018",
-    title: "Moving in together",
+    title: "We moved in together",
     description:
-      "With the need to move to the city for college, they decided to live together as roommates. However, they soon realized there was much more than friendship between them.",
+      "We had to move to the city for college, so we decided to live together as roommates. But soon, we realized what we had was much more than just friendship.",
     image: [foto8, foto9, foto10],
   },
   {
     date: "March 2018",
-    title: "The family grew",
+    title: "Our family grew",
     description:
-      "In March 2018, they adopted Chiky, a little puppy who filled their home with love and laughter. Since then, she’s become the heart of their little family.",
+      "In March 2018, we adopted Chiky, a little kitty who filled our home with love and laughter. Since then, she has been the heart of our little family.",
     image: [foto22, foto18],
   },
   {
     date: "March 2019",
     title: "Long-distance love",
     description:
-      "Nicole moved to the Caribbean to study for four years, but distance was never a barrier for their love. They found ways to stay connected and made their relationship even stronger.",
+      "Nicole moved to the Caribbean to study for four years, but distance was never a barrier to our love. We found ways to stay connected and grew even stronger together.",
     image: [foto12, foto11, foto13, foto14],
   },
   {
     date: "January 2024",
     title: "New beginning, same love",
     description:
-      "After years of effort, they finally moved back in together in 2024—this time with their careers completed and ready to build a home side by side.",
+      "After years of effort, we finally moved back in together in 2024—this time with our careers completed and ready to build our home.",
     image: [foto17, foto16, foto15, foto19, foto20],
   },
   {
     date: "December 22, 2024",
     title: "The engagement",
     description:
-      "After 8 years and 3 months together, Marcial finally put a ring on Nicole’s finger, as a promise to continue building this love story together. It marks the start of a new chapter, and today we’re thrilled to know you’ll be with us to celebrate this wedding.",
+      "After 8 years and 3 months together, Marcial finally put a ring on Nicole’s finger, as a promise to keep building this love story. It’s the beginning of a new chapter, and today, with so much excitement, we’re thrilled to know you’ll be with us to celebrate our wedding.",
     image: [foto24, foto21, foto25, foto26],
   },
 ];
+
 
 
 export { timeline_es, timeline_en };

@@ -60,22 +60,43 @@ export default function FAQs() {
                   <p>{faq.answer}</p>
                   {(faq.link || faq.link2) && (
                     <div className="flex gap-10 mt-2">
-                      {faq.link && (
-                        <Link
-                          to={faq.link}
-                          className="text-primary-500 font-bold underline block"
-                        >
-                          {faq.linkText}
-                        </Link>
-                      )}
-                      {faq.link2 && (
-                        <Link
-                          to={faq.link2}
-                          className="text-primary-500 font-bold underline block"
-                        >
-                          {faq.link2Text}
-                        </Link>
-                      )}
+                      {faq.link &&
+                        (faq.link.startsWith("http") ? (
+                          <a
+                            href={faq.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary-500 font-bold underline block"
+                          >
+                            {faq.linkText}
+                          </a>
+                        ) : (
+                          <Link
+                            to={`/${lang}${faq.link}`}
+                            className="text-primary-500 font-bold underline block"
+                          >
+                            {faq.linkText}
+                          </Link>
+                        ))}
+
+                      {faq.link2 &&
+                        (faq.link2.startsWith("http") ? (
+                          <a
+                            href={faq.link2}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary-500 font-bold underline block"
+                          >
+                            {faq.link2Text}
+                          </a>
+                        ) : (
+                          <Link
+                            to={`/${lang}${faq.link2}`}
+                            className="text-primary-500 font-bold underline block"
+                          >
+                            {faq.link2Text}
+                          </Link>
+                        ))}
                     </div>
                   )}
                 </motion.div>

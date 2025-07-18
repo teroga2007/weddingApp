@@ -66,7 +66,7 @@
   },
   "lodging": {
     "section": "Lodging Recommendations",
-    "description": "We recommend searching directly on each hotel’s website or on platforms like Booking.com or Airbnb.",
+    "description": "We recommend to search directly on each hotel’s website or on platforms like Booking.com or Airbnb.",
     "places": [
       {
         "name": "Fiesta Resort – All Inclusive",
@@ -109,10 +109,10 @@
   "gallery": {
     "title": "Photo Gallery",
     "backTitle": "Photos",
-    "heading": "Relive and Share!",
-    "description": "We've created a collaborative album where you can view all the event photos and upload your own to share with all the guests. 📷✨",
+    "heading": "Recreate and Share!",
+    "description": "We've created a collaborative album where you can view all the event photos and upload your own to share with us. 📷✨",
     "cta": "Go to the Google Photos Album",
-    "uploadInvite": "Did you take any photos or videos during the wedding? 🥰 Upload them to the album so we can all relive those special moments together."
+    "uploadInvite": "Did you take any photos or videos during the wedding? 🥰 Upload them to the album so we can all recreate those special moments together."
   },
   "rsvp": {
     "title": "Confirm your attendance",
@@ -140,7 +140,7 @@
       },
       {
         "question": "What happens if I don’t RSVP?",
-        "answer": "Only those who confirmed will be allowed entry. We’re personalizing every detail and have made payments per guest, so we won’t be able to accommodate unconfirmed attendees. If you don’t RSVP, we’ll understand you won’t be joining us.",
+        "answer": "Only those who confirmed will be allowed to enter. We’re personalizing every detail and have made payments per guest, so we won’t be able to accommodate unconfirmed attendees. If you don’t RSVP, we’ll understand you won’t be joining us.",
         "link": "/rsvp",
         "linkText": "RSVP now"
       },
@@ -162,7 +162,7 @@
       },
       {
         "question": "Are there any activities the next day?",
-        "answer": "We don’t have activities planned for the next day. That’s why we suggest you stay somewhere you’ll enjoy that’s close to local attractions like Paseo de los Turistas, Marine Park, nearby beaches, the port pier, San Lucas Island, Tortuga Island, and more. You can also choose a hotel or house with a pool and amenities to make the wedding weekend a getaway of its own."
+        "answer": "We don’t have activities planned for the next day. That’s why we suggest you stay somewhere you’ll enjoy, close to local attractions like Paseo de los Turistas, Marine Park, nearby beaches, the port pier, San Lucas Island, Tortuga Island, and more. You can also choose a hotel or house with a pool and amenities to make the wedding weekend a getaway of its own."
       },
       {
         "question": "What if I have a question?",
