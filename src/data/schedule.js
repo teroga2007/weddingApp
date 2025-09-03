@@ -5,10 +5,9 @@ const schedule_es = [
   },
   { time: "5:00 PM", activity: "Coffee break y presentación especial a cargo de nuestra querida Valeria" },
   {
-    time: "5:30 PM", activity: "Discurso por parte de la mejor amiga de la novia"
+    time: "5:30 PM", activity: "Palabras a los novios"
   },
-  { time: "5:40 PM", activity: "Brindis por los novios a cargo del padrino" },
-  { time: "5:50 PM", activity: "Breve oración a cargo del abuelo de la novia" },
+  { time: "5:40 PM", activity: "¡Salud!" },
   { time: "6:30 PM", activity: "Cena" },
   { time: "7:30 PM", activity: "Primer baile como esposos" },
   { time: "7:40 PM", activity: "¡Todos a la pista!" },
@@ -27,15 +26,11 @@ const schedule_en = [
   },
   {
     time: "5:30 PM",
-    activity: "Speech by the bride's best friend",
+    activity: "Words to the couple",
   },
   {
     time: "5:40 PM",
-    activity: "Toast to the couple by the best man",
-  },
-  {
-    time: "5:50 PM",
-    activity: "Brief prayer by the bride's grandfather",
+    activity: "Cheers!",
   },
   { time: "6:30 PM", activity: "Dinner" },
   { time: "7:30 PM", activity: "First dance as husband and wife" },

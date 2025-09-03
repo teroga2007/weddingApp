@@ -72,7 +72,7 @@ export default function Gifts() {
               <span className="text-sm">IBAN: CR78015202001404028785</span>
               <br />
               <span className="text-sm">
-                {t("gifts.accountHolder")}: Nombre Completo
+                {t("gifts.accountHolder")}: Nicole Robles Gamboa
               </span>
               <br />
               <span className="text-sm">{t("gifts.cardType")}: VISA</span>
@@ -81,7 +81,7 @@ export default function Gifts() {
             <li>
               <strong>📱 {t("gifts.sinpe")}:</strong>
               <br />
-              {t("gifts.sinpeNumber")}: +506 8384 6353
+              {t("gifts.sinpeNumber")}: +506 6229 5861
             </li>
           </ul>
         </motion.div>

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import invite from "../assets/invite.png";
+import inviteEn from "../assets/inviteEn.png";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -21,6 +23,8 @@ export default function Home() {
 
   const [currentImage, setCurrentImage] = useState(0);
   const [timeLeft, setTimeLeft] = useState({});
+  const [showInvite, setShowInvite] = useState(false);
+
   const units = {
     days: t("home.timer.days"),
     hours: t("home.timer.hours"),
@@ -154,6 +158,52 @@ export default function Home() {
           )}
         </motion.div>
       </div>
+
+      <motion.button
+        onClick={() => setShowInvite(true)}
+        className="mt-8 px-6 py-3 bg-secondary-500 text-black font-semibold rounded-2xl shadow-md hover:bg-accent-500 transition z-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2 }}
+      >
+        {lang === "es" ? "Ver Invitación" : "View Invitation"}
+      </motion.button>
+
+      {/* Lightbox para invitación */}
+      <AnimatePresence>
+        {showInvite && (
+          <motion.div
+            id="lightbox-bg"
+            onClick={() => setShowInvite(false)}
+            className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            aria-modal="true"
+            role="dialog"
+          >
+            <button
+              onClick={() => setShowInvite(false)}
+              className="absolute top-6 right-6 text-white text-4xl font-bold hover:text-primary-500 z-50"
+              aria-label="Cerrar invitación"
+            >
+              &times;
+            </button>
+
+            <motion.img
+              src={lang === "es" ? invite : inviteEn}
+              alt="Invitación"
+              className="max-w-full max-h-full rounded-lg shadow-2xl"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
