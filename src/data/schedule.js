@@ -3,13 +3,13 @@ const schedule_es = [
   {
     time: "4:00 PM", activity: "Ceremonia en la playa (Favor llegar al menos 15 minutos antes de la ceremonia)"
   },
-  { time: "5:00 PM", activity: "Coffee break y presentación especial a cargo de nuestra querida Valeria" },
+  { time: "5:00 PM", activity: "Coffee break y presentación especial" },
   {
     time: "5:30 PM", activity: "Palabras a los novios"
   },
   { time: "5:40 PM", activity: "¡Salud!" },
   { time: "6:30 PM", activity: "Cena" },
-  { time: "7:30 PM", activity: "Primer baile como esposos" },
+  { time: "7:30 PM", activity: "Primer baile" },
   { time: "7:40 PM", activity: "¡Todos a la pista!" },
 ]
 
@@ -22,7 +22,7 @@ const schedule_en = [
   {
     time: "5:00 PM",
     activity:
-      "Coffee break and special presentation by our dear Valeria",
+      "Coffee break and special presentation",
   },
   {
     time: "5:30 PM",
@@ -33,7 +33,7 @@ const schedule_en = [
     activity: "Cheers!",
   },
   { time: "6:30 PM", activity: "Dinner" },
-  { time: "7:30 PM", activity: "First dance as husband and wife" },
+  { time: "7:30 PM", activity: "First dance" },
   { time: "7:40 PM", activity: "Everyone to the dance floor!" },
 ];
 
