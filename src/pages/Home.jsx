@@ -17,7 +17,7 @@ import i18n from "../i18n";
 
 const photos = [couplePhoto1, couplePhoto2, couplePhoto3, couplePhoto4];
 
-export default function Home() {
+export default function Home({ setMenuOpen }) {
   const { t } = useTranslation();
   const { lang } = useParams();
 
@@ -160,8 +160,18 @@ export default function Home() {
       </div>
 
       <motion.button
+        onClick={() => setMenuOpen(true)}
+        className="mt-4 px-6 py-3 bg-primary-500 text-white font-semibold rounded-2xl shadow-lg hover:bg-primary-600 transition z-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.4 }}
+      >
+        {lang === "es" ? "Explorar Sitio" : "Explore Site"}
+      </motion.button>
+
+      <motion.button
         onClick={() => setShowInvite(true)}
-        className="mt-8 px-6 py-3 bg-secondary-500 text-black font-semibold rounded-2xl shadow-md hover:bg-accent-500 transition z-10"
+        className="mt-2 px-6 py-3 bg-secondary-500 text-black font-semibold rounded-2xl shadow-md hover:bg-accent-500 transition z-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2 }}

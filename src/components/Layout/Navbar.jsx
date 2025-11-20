@@ -1,11 +1,11 @@
 import { Link, useLocation, matchPath } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Languages } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import LanguageSwitcher from "../Lang/LanguageSwitcher";
 
-export default function Navbar() {
+export default function Navbar({ menuOpen, setMenuOpen }) {
   const location = useLocation();
   const { t } = useTranslation();
 
@@ -29,7 +29,6 @@ export default function Navbar() {
 
   const isHome =
     location.pathname === `/${lang}/` || location.pathname === `/${lang}`;
-  const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
   useEffect(() => {

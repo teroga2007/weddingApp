@@ -10,11 +10,14 @@ import Gallery from "./pages/Gallery";
 import FAQs from "./pages/FAQ";
 import Story2 from "./pages/Story2";
 import NotFound from "./components/NotFound/NotFound";
+import { useState } from "react";
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main className="flex-1">
         <AnimatePresence mode="wait">
           <Routes>
@@ -23,7 +26,7 @@ export default function App() {
 
             {/* Rutas por idioma */}
             <Route path=":lang">
-              <Route index element={<Home />} />
+              <Route index element={<Home setMenuOpen={setMenuOpen} />} />
               <Route path="story" element={<Story2 />} />
               <Route path="rsvp" element={<RSVP />} />
               <Route path="gifts" element={<Gifts />} />
