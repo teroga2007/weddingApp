@@ -112,7 +112,10 @@
   "rsvp": {
     "title": "Confirma tu asistencia",
     "noscript1": "Si el formulario no carga, hacé clic",
-    "noscript2": "aquí para confirmar tu asistencia"
+    "noscript2": "aquí para confirmar tu asistencia",
+    "warnTitle": "⚠️ IMPORTANTE",
+    "warnMessage": "Si no confirmas tu asistencia antes del 25 de enero, se dará por hecho que no asistirás y no podrás ingresar al evento.",
+    "disclaimerMessage": "Este formulario es de Google. Si no puedes verlo, tu navegador podría estar bloqueando iframes. Abre el formulario directamente aquí:"
   },
   "faq": {
     "title": "Preguntas Frecuentes",

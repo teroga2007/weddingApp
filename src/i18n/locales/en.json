@@ -109,7 +109,10 @@
   "rsvp": {
     "title": "Confirm your attendance",
     "noscript1": "If the form doesn't load, click",
-    "noscript2": "here to confirm your attendance"
+    "noscript2": "here to confirm your attendance",
+    "warnTitle": "⚠️ IMPORTANT",
+    "warnMessage": "If you do not confirm your attendance before January 25, it will be assumed that you will not attend and you will not be allowed to enter the event.",
+    "disclaimerMessage": "Note: This is a Google form. If you cannot view it, your browser may be blocking iframes. Open the form directly here:"
   },
   "faq": {
     "title": "Frequently Asked Questions",

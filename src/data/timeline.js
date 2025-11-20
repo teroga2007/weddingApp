@@ -22,6 +22,8 @@ import foto22 from "../assets/elements/foto22.jpg";
 import foto24 from "../assets/elements/foto24.jpg";
 import foto25 from "../assets/elements/foto25.png";
 import foto26 from "../assets/elements/foto26.jpg";
+import foto27 from "../assets/elements/foto27.jpg";
+import foto28 from "../assets/elements/foto28.jpg";
 
 const timeline_es = [
   {
@@ -78,7 +80,7 @@ const timeline_es = [
     title: "El compromiso",
     description:
       "Después de 8 años y 3 meses juntos, Marcial finalmente se animó a ponerle un anillo en el dedo a Nicole, como una promesa de seguir construyendo esta historia de amor. Es el inicio de una nueva etapa, y hoy, con toda la emoción del mundo, nos hace muy felices saber que estarán con nosotros celebrando este matrimonio.",
-    image: [foto24, foto21, foto25, foto26],
+    image: [foto24, foto21, foto25, foto26, foto27, foto28],
   },
 ];
 
@@ -138,7 +140,7 @@ const timeline_en = [
     title: "The engagement",
     description:
       "After 8 years and 3 months together, Marcial finally put a ring on Nicole’s finger, as a promise to keep building this love story. It’s the beginning of a new chapter, and today, with so much excitement, we’re thrilled to know you’ll be with us to celebrate our wedding.",
-    image: [foto24, foto21, foto25, foto26],
+    image: [foto24, foto21, foto25, foto26, foto27, foto28],
   },
 ];
 
